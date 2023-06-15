@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Estrutura HTML da página inicial do site -->
+<!-- lang define o idioma da página-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- As tags a seguir, title e link, definem o nome e ícone da página que serão exibidos no aba do navegador -->
+    <title>Universo Marvel</title>
+    <link rel="icon" type="image-icon" href="imagens/logo-marvel.ico">
+
+    <!-- A seguir estão sendo linkados os arquivos css que definirão a estilização da página -->
+    <!-- reset.css resetá/zera/normaliza todo e qualquer estilo predefinido pelo navegador -->
+    <!-- style.css define a estilização a ser aplicada na página -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="avengers.css">
+
+</head>
+
+<body>
+    <!-- Cabeçalho da página: logo e nome do site -->
+    <header>
+        <img class="logo" src="imagens/marvel-cab.png" alt="logo marvel">
+        <h1 class="titulo">UNIVERSO MARVEL</h1>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul class="menu">
+            <li class="item-menu"><a href="index.html">Home</a></li>
+            <li class="item-menu"><a href="avengers.html">Avengers</a></li>
+            <li class="item-menu"><a href="guardioes.html">Guardiões</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo, parte principal da página, será dividido em 3 seções -->
+    <main>
+        <!-- Seção 1: contém imagem e texto -->
+        <section class="curso-info">
+            <h2 class="titulo-section">Vingadores</h2>
+            <img class="curso-img" src="imagens/vingadores2.jpg" alt="Imagens ilustrativa representando os vingadores.">
+            <p class="curso-paragrafo">Criado por Stan Lee e Jack Kirby em 1963, Os Vingadores são a maior superequipe da Marvel Comics. Em sua história, o grupo teve diversas formações.</p>
+        </section>
+
+        <!-- Seção 2: contém um vídeo -->
+        <section>
+            <h2 class="titulo-section">Trailer de Vingadores Ultimato</h2>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/4QRdB4RAQMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+
+        <!-- Seção 3: contém um resumo sobre os vingadores(somente texto) -->
+        <section id="section-maps">
+            <h2 class="titulo-section">Um pouco mais sobre os Vingadores</h2>
+            <p>O primeiro filme que adaptou às telas a série tinha no elenco Robert Downey Jr. (Homem de Ferro), Chris Evans (Capitão América), Chris Hemsworth (Thor), Jeremy Renner (Gavião Arqueiro), Mark Ruffalo (Hulk), Scarlett Johansson (Viúva Negra), Samuel L. Jackson (Nick Fury), Clark Gregg (Agente Coulson), Cobie Smulders (Maria Hill), Tom Hiddleston (Loki), Stellan Skarsgard (Dr. Selvig) e Amanda Righetti (agente da SHIELD). Joss Whedon escreveu o roteiro e dirigiu o filme.</p>
+            
+
+        </section>
+
+        <aside class="sidebar">
+            <h3 class="sidebar-titulo">Personagens</h3>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/capitão-logo.jpg"
+                    alt="Capitão America"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/ironman-logo.jpg"
+                    alt="Homem de Ferro"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/thor-logo.jpg" alt="Thor"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/hulk0logo.jpg"
+                    alt="Hulk"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/aranhalogo.jpg"
+                    alt="Homem Aranha"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/viuvalogo.jpg" alt="Viuva"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/rocketlogo.jpg"
+                    alt="Rocket Raccon"></a>
+            <p class="sidebar-info">Todos os personagens acima contem o selo lee  de qualidade.</p>
+            <img class="sidebar-img" src="imagens/selo-qualidade.jpg" alt="stan le aprova">
+        </aside>
+
+    </main>
+
+    <!-- Rodapé da página: contém o logo e texto -->
+    <footer>
+        <img class="logo-rodape" src="imagens/marvel-cab.png" alt="logo da marvel">
+        <p class="texto-rodape">Site modelo produzido para aprendizagem de Programação Web.</p>
+        <p class="texto-rodape">Nenhum direito reservado. Uncreative Commons.</p>
+        <p class="texto-rodape" style="font-size: 80px;">&#9982;</p>
+    </footer>
+</body>
+
+</html>
