@@ -1,1 +1,21 @@
+!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela Trybe</title>
+</head>
+<body>
+    <table border="1" width="500">
+        <thead>
+            <tr>
+                <th scope="col"> Coluna 1 </th>
+                <th scope="col"> Coluna 2 </th> 
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
+
+------------------------------------------------------------
+
 
