@@ -1,127 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt">
+<!-- Estrutura HTML da página inicial do site -->
+<!-- lang define o idioma da página-->
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Tabela Trybe</title>
+    <meta charset="utf-8">
+
+    <!-- As tags a seguir, title e link, definem o nome e ícone da página que serão exibidos no aba do navegador -->
+    <title>Universo Marvel</title>
+    <link rel="icon" type="image-icon" href="imagens/logo-marvel.ico">
+
+    <!-- A seguir estão sendo linkados os arquivos css que definirão a estilização da página -->
+    <!-- reset.css resetá/zera/normaliza todo e qualquer estilo predefinido pelo navegador -->
+    <!-- style.css define a estilização a ser aplicada na página -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <table border="1" width="500">
-        <thead>
-            <tr>
-                <th scope="col"> Coluna 1 </th>
-                <th scope="col"> Coluna 2 </th> 
-            </tr>
-        </thead>
-    </table>
+    <!-- Cabeçalho da página: logo e nome do site -->
+    <header>
+        <img class="logo" src="imagens/marvel-cab.png" alt="logo marvel">
+        <h1 class="titulo">UNIVERSO MARVEL</h1>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul class="menu">
+            <li class="item-menu"><a href="index.html">Home</a></li>
+            <li class="item-menu"><a href="avengers.html">Avengers</a></li>
+            <li class="item-menu"><a href="guardioes.html">Guardiões</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo, parte principal da página, será dividido em 3 seções -->
+    <main>
+        <!-- Seção 1: contém imagem e texto -->
+        <section class="curso-info">
+            <h2 class="titulo-section">Stan Lee, o pai de todos</h2>
+            <img class="curso-img" src="imagens/stan-tema1.jpg" alt="Imagens ilustrativa representando stan lee e o universo marvel.">
+            <p class="curso-paragrafo">Stanley Martin Lieber nasceu em 28 de dezembro de 1922, em Nova York, nos Estados Unidos.</p>
+            <p>O americano, que já ocupou cargos de editor e presidente da Marvel Comics, foi um escritor e criador de numerosos personagens dos quadrinhos, que mais tarde ganharam adaptações em filmes do Universo Cinematográfico Marvel.</p>
+        </section>
+
+        <!-- Seção 2: contém um vídeo -->
+        <section>
+            <h2 class="titulo-section">Vídeo</h2>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/esyL1E06dIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+
+        <!-- Seção 3: contém uma mapa -->
+        <section id="section-maps">
+            <h2 class="titulo-section">CEEP PG</h2>
+            <p>Aqui temos um estudio criado para visitação dos fãs.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2278.8131133220586!2d-115.17169851244861!3d36.12447384274513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c415dcdb0921%3A0x37dfcfc20a7ceaac!2sMarvel%20Avengers%20S.T.A.T.I.O.N.!5e0!3m2!1spt-BR!2sbr!4v1686612219219!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+        <aside class="sidebar">
+            <h3 class="sidebar-titulo">Personagens</h3>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/capitão-logo.jpg"
+                    alt="Capitão America"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/ironman-logo.jpg"
+                    alt="Homem de Ferro"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/thor-logo.jpg" alt="Thor"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/hulk0logo.jpg"
+                    alt="Hulk"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/aranhalogo.jpg"
+                    alt="Homem Aranha"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/viuvalogo.jpg" alt="Viuva"></a>
+            <a class="sidebar-links" href=""><img class="sidebar-banners" src="imagens/rocketlogo.jpg"
+                    alt="Rocket Raccon"></a>
+            <p class="sidebar-info">Todos os personagens acima contem o selo lee  de qualidade.</p>
+            <img class="sidebar-img" src="imagens/selo-qualidade.jpg" alt="stan le aprova">
+        </aside>
+
+    </main>
+
+    <!-- Rodapé da página: contém o logo e texto -->
+    <footer>
+        <img class="logo-rodape" src="imagens/marvel-cab.png" alt="logo da marvel">
+        <p class="texto-rodape">Site modelo produzido para aprendizagem de Programação Web.</p>
+        <p class="texto-rodape">Nenhum direito reservado. Uncreative Commons.</p>
+        <p class="texto-rodape" style="font-size: 80px;">&#9982;</p>
+    </footer>
 </body>
+
 </html>
-
-------------------------------------------------------------------------
-
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <title>Tabela Trybe</title>
-</head>
-<body>
-    <table border="1" width="500">
-        <thead>
-            <tr>
-                <th scope="col"> Title  </th>
-                <th scope="col"> Title  </th> 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td> Conteudo 1</td>
-                <td> Conteudo 2</td>
-            </tr>
-            <tr>
-                <td> Conteudo 3</td>
-                <td> Conteudo 4</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
-
-------------------------------------------------------------------------
-
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <title>Tabela Trybe</title>
-</head>
-<body>
-    <table border="1" width="500">
-        <thead>
-            <tr>
-                <th scope="col"> Title  </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td> Linha 1</td>
-            </tr>
-            <tr>
-                <td> Linha 2</td>
-            </tr>
-            <tr>
-                <td> Linha 3</td>
-            </tr>
-            <tr>
-                <td> Linha 4</td>
-            </tr>
-            <tr>
-                <td> Linha 5</td>
-            </tr>
-            <tr>
-                <td> Linha 6</td>
-            </tr>
-            <tr>
-                <td> Linha 7</td>
-            </tr>
-            <tr>
-                <td> Linha 8</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
-
-------------------------------------------------------------------------
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <title>Tabela Trybe</title>
-</head>
-<body>
-    <table border="1" width="500">
-        <thead>
-            <tr>
-                <th scope="col"> Title  </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td width="auto">Linha 1</td>
-                <td width="auto">Linha 2</td>
-                <td width="auto">Linha 3</td>
-                <td width="auto">Linha 4</td>
-                <td width="auto">Linha 5</td>
-                <td width="auto">Linha 6</td>
-                <td width="auto">Linha 7</td>
-                <td width="auto">Linha 8</td>
-                <td width="auto">Linha 9</td>
-                <td width="auto">Linha 10</td>             
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html> 
-
-----------------------------------------------------------------------------
-
